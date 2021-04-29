@@ -1,4 +1,4 @@
-public class BankAccount {
+spublic class BankAccount {
 
   public double getAmount() {
     //TODO: реализуйте метод и удалите todo
