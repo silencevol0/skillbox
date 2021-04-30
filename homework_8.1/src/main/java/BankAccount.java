@@ -1,15 +1,39 @@
-spublic class BankAccount {
+public class BankAccount {
+
+  double account = 0;
 
   public double getAmount() {
-    //TODO: реализуйте метод и удалите todo
-    return 0;
+    System.out.println("У Вас на банковском счете " + account + " Валюты");
+    return account;
   }
 
-  public void put(double amountToPut) {
-    //TODO: реализуйте метод и удалите todo
+  public boolean put(double amountToPut) {
+    if (amountToPut > 0) {
+      account += amountToPut;
+      System.out.println("На Ваш счет зачислено " + amountToPut + " валюты.");
+      return true;
+    }
+    else  return false;
   }
 
-  public void take(double amountToTake) {
-    //TODO: реализуйте метод и удалите todo
+  public boolean take(double amountToTake) {
+    if (amountToTake > account){
+      System.out.println("Вы не можете снять денег больше, чем у Вас есть.");
+      return false;
+    }
+    else {
+      account -= amountToTake;
+      System.out.println("С Вашего счета списано " + amountToTake + " валюты.");
+      return true;
+    }
   }
+
+  boolean send(BankAccount receiver, double amount) {
+    if (take(amount)) {
+      receiver.put(amount);
+      return true;
+    }
+    else return false;
+  }
+
 }
