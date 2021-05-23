@@ -1,6 +1,6 @@
 public class BankAccount {
 
-  double account = 0;
+  private double account = 0;
 
   public double getAmount() {
     System.out.println("У Вас на банковском счете " + account + " Валюты");
@@ -28,7 +28,7 @@ public class BankAccount {
     }
   }
 
-  boolean send(BankAccount receiver, double amount) {
+  public boolean send(BankAccount receiver, double amount) {
     if (take(amount)) {
       receiver.put(amount);
       return true;

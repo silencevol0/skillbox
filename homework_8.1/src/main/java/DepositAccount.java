@@ -3,8 +3,8 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class DepositAccount extends BankAccount {
-    LocalDate lastIncome;
-    double account = 0;
+    private LocalDate lastIncome;
+    private double account = 0;
 
     @Override
     public double getAmount() {

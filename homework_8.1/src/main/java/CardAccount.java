@@ -1,7 +1,7 @@
 public class CardAccount extends BankAccount {
 
 
-    double account = 0;
+    private double account = 0;
 
 
     @Override
