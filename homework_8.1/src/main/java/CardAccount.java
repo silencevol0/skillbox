@@ -1,19 +1,18 @@
 public class CardAccount extends BankAccount {
 
 
-    private double account = 0;
 
 
     @Override
     public double getAmount() {
-        System.out.println("У Вас на карточном счете " + account + " Валюты");
-        return account;
+        System.out.println("У Вас на карточном счете " + this.getAccount() + " Валюты");
+        return this.getAccount();
     }
 
     @Override
     public boolean put(double amountToPut) {
         if (amountToPut > 0) {
-            account += amountToPut;
+            this.setAccount(this.getAccount() + amountToPut);
             System.out.println("На Ваш счет зачислено " + amountToPut + " валюты.");
             return true;
         }
@@ -22,11 +21,11 @@ public class CardAccount extends BankAccount {
 
     @Override
     public boolean take(double amountToTake) {
-        if (amountToTake > account) {
+        if (amountToTake > this.getAccount()) {
             System.out.println("Вы не можете снять денег больше, чем у Вас есть.");
             return false;
         } else {
-            account = account - amountToTake - (amountToTake * 0.01);
+            this.setAccount(this.getAccount() - amountToTake - (amountToTake * 0.01));
             System.out.println("С Вашего счета списано " + amountToTake + " валюты.");
             return true;
         }

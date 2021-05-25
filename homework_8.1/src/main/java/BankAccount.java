@@ -2,6 +2,14 @@ public class BankAccount {
 
   private double account = 0;
 
+  public double getAccount() {
+    return account;
+  }
+
+  public void setAccount(double account) {
+    this.account = account;
+  }
+
   public double getAmount() {
     System.out.println("У Вас на банковском счете " + account + " Валюты");
     return account;
