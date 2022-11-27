@@ -1,6 +1,11 @@
 package app;
 
+import java.time.LocalDate;
+import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
 
 public class Main {
 
@@ -14,8 +19,9 @@ public class Main {
     }
 
     public static Employee findEmployeeWithHighestSalary(List<Employee> staff, int year) {
-        //TODO Метод должен вернуть сотрудника с максимальной зарплатой среди тех,
-        // кто пришёл в году, указанном в переменной year
-        return null;
+        Optional optional = staff.stream().filter(e -> e.getWorkStart().isAfter(LocalDate.of(year , 1,1)))
+                .filter(e -> e.getWorkStart().isBefore(LocalDate.of(year,12,31)))
+                .max(Comparator.comparing(Employee::getSalary));
+        return (Employee) optional.get();
     }
 }
