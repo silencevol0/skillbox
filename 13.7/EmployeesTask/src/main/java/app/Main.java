@@ -23,5 +23,11 @@ public class Main {
                 .filter(e -> e.getWorkStart().isBefore(LocalDate.of(year,12,31)))
                 .max(Comparator.comparing(Employee::getSalary));
         return (Employee) optional.get();
+        // return staff.stream()
+        //           .filter((e) -> e.getWorkStart().getYear() == year)
+        //           .max((e1, e2) ->
+        //               e1.getSalary().compareTo(e2.getSalary()))
+        //           .get();
+        //   }
     }
 }
