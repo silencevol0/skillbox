@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <File name="FileInfo" fileName="logs/queries.log" append="true">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p [%t] %C{2} %F%L - %m%n</Pattern>
+            </PatternLayout>
+            <Filters>
+                <ThresholdFilter level="warn" onMatch="DENY" onMismatch="NEUTRAL" />
+            </Filters>
+        </File>
+
+        <File name="FileErrors" fileName="logs/errors.log" append="true">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p [%t] %C{2} %F%L - %m%n</Pattern>
+            </PatternLayout>
+        </File>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="FileInfo" level="info"/>
+            <AppenderRef ref="FileErrors" level="error"/>
+        </Root>
+    </Loggers>
+</Configuration>

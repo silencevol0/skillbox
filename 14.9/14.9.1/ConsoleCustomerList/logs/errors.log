@@ -1,0 +1,25 @@
+2022-12-10 21:45:54 ERROR [main] Main Main.java43 - [Ljava.lang.StackTraceElement;@4145bad8
+2022-12-10 21:47:09 ERROR [main] Main Main.java43 - [Ljava.lang.StackTraceElement;@1c7696c6
+2022-12-10 21:47:09 ERROR [main] Main Main.java44 - Incorrect input format. Correct format - add Василий Петров vasily.petrov@gmail.com +79215637722, try again and use correct format
+2022-12-10 21:48:05 ERROR [main] Main Main.java43 - incorrectNumberOfComponents: Incorrect input format. Correct format - add Василий Петров vasily.petrov@gmail.com +79215637722, try again and use correct format
+2022-12-10 21:48:05 ERROR [main] Main Main.java44 - Incorrect input format. Correct format - add Василий Петров vasily.petrov@gmail.com +79215637722, try again and use correct format
+2022-12-10 21:48:27 ERROR [main] Main Main.java43 - incorrectNumberOfComponents: Incorrect input format. Correct format - add Василий Петров vasily.petrov@gmail.com +79215637722, try again and use correct format
+2022-12-10 21:49:36 ERROR [main] Main Main.java43 - incorrectNumberOfComponents: Incorrect input format. Correct format - add Василий Петров vasily.petrov@gmail.com +79215637722, try again and use correct format
+2022-12-10 21:51:20 ERROR [main] Main Main.java44 - incorrectNumberOfComponents: Incorrect input format. Correct format - add Василий Петров vasily.petrov@gmail.com +79215637722, try again and use correct format
+2022-12-10 21:55:43 ERROR [main] Main Main.java47 - Index 0 of stack trace array contains = CustomerStorage.addCustomer(CustomerStorage.java:25)
+2022-12-10 21:55:43 ERROR [main] Main Main.java47 - Index 1 of stack trace array contains = Main.main(Main.java:28)
+2022-12-10 22:03:03 ERROR [main] Main Main.java49 - incorrectNumberOfComponents: Incorrect input format. Correct format - add Василий Петров vasily.petrov@gmail.com +79215637722, try again and use correct format
+2022-12-10 22:03:03 ERROR [main] Main Main.java52 - Main.writeStackTrace(Main.java:49)
+2022-12-10 22:03:03 ERROR [main] Main Main.java52 - Main.main(Main.java:43)
+2022-12-10 22:03:09 ERROR [main] Main Main.java49 - incorrectEmailFormat: The entered email does not meet the standards, check the correctness of filling.
+2022-12-10 22:03:09 ERROR [main] Main Main.java52 - Main.writeStackTrace(Main.java:49)
+2022-12-10 22:03:09 ERROR [main] Main Main.java52 - Main.main(Main.java:43)
+2022-12-10 22:03:20 ERROR [main] Main Main.java49 - incorrectNumberOfComponents: Incorrect input format. Correct format - add Василий Петров vasily.petrov@gmail.com +79215637722, try again and use correct format
+2022-12-10 22:03:20 ERROR [main] Main Main.java52 - Main.writeStackTrace(Main.java:49)
+2022-12-10 22:03:20 ERROR [main] Main Main.java52 - Main.main(Main.java:43)
+2022-12-10 22:03:32 ERROR [main] Main Main.java49 - incorrectPhoneNumberFormat: The entered phone number does not meet the standards of the number in Russia.
+2022-12-10 22:03:32 ERROR [main] Main Main.java52 - Main.writeStackTrace(Main.java:49)
+2022-12-10 22:03:32 ERROR [main] Main Main.java52 - Main.main(Main.java:43)
+2022-12-10 22:04:34 ERROR [main] Main Main.java49 - personIsNotFound: The card of the person to delete was not found, check the correctness of the entered data.
+2022-12-10 22:04:34 ERROR [main] Main Main.java52 - Main.writeStackTrace(Main.java:49)
+2022-12-10 22:04:34 ERROR [main] Main Main.java52 - Main.main(Main.java:43)
